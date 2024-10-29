@@ -10,7 +10,7 @@ namespace CrudAvaliativoTechClass.Web.Controllers
         private readonly IClienteSevice _clienteService;
 
        
-        public ClienteController(IClienteService clienteService)
+        public ClienteController(ClienteService clienteService)
         {
             _clienteService = (IClienteSevice)clienteService;
         }

@@ -1,11 +1,12 @@
 ﻿using CrudAvaliativoTechClass.Core.Entidades;
+using CrudAvaliativoTechClass.Core.Contratos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace CrudAvaliativoTechClass.Infra.Repositorios
 {
-    internal class ClienteRepositorio
+    internal class ClienteRepositorio : IClienteRepositorio
     {
         private static List<Cliente> clientes = new List<Cliente>();
         private static int id = 0;
