@@ -2,9 +2,9 @@
 
 namespace CrudAvaliativoTechClass.Core.Entidades
 {
-    internal class Cliente
+    internal class Cliente : ClienteBase
     {
-        public int Id { get; set; }
+        
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Email { get; set; }
@@ -12,13 +12,14 @@ namespace CrudAvaliativoTechClass.Core.Entidades
 
 
         public Cliente(string nome, DateTime nascimento, string email, int telefone)
-        {   
-            
+        {
             Nome = nome;
             DataNascimento = nascimento;
-            Email = email;  
+            Email = email;
             Telefone = telefone;
-
         }
+
+
+
     }
 }

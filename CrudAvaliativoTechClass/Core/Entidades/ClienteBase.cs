@@ -4,7 +4,8 @@ using System.Text;
 
 namespace CrudAvaliativoTechClass.Core.Entidades
 {
-    internal class ClienteBase
+    internal abstract class ClienteBase
     {
+        public  int Id { get; set; }
     }
 }

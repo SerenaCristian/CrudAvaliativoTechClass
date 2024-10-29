@@ -1,5 +1,6 @@
 ﻿using CrudAvaliativoTechClass.Core.Contratos;
 using CrudAvaliativoTechClass.Core.Entidades;
+using CrudAvaliativoTechClass.Infra.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,10 @@ namespace CrudAvaliativoTechClass.Web.Services
             _clienteRepositorio = clienteRepositorio;
         }
 
+        public Cliente GetCliente()
+        {
+            return new Cliente("Nome", new DateTime(), "teste@teste", 99999);
+        }
 
         public void AdicionarCliente(Cliente cliente)
         {
