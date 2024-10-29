@@ -11,9 +11,9 @@ namespace CrudAvaliativoTechClass.Core.Entidades
         public int Telefone { get; set; }
 
 
-        public Cliente(int id, string nome, DateTime nascimento, string email, int telefone)
+        public Cliente(string nome, DateTime nascimento, string email, int telefone)
         {   
-            Id = id; 
+            
             Nome = nome;
             DataNascimento = nascimento;
             Email = email;  
