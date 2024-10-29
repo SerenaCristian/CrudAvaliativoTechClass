@@ -1,5 +1,5 @@
-﻿using CrudAvaliativoTechClass.Core.Entidades;
-using CrudAvaliativoTechClass.Infra.Repositorios;
+﻿using CrudAvaliativoTechClass.Core.Contratos;
+using CrudAvaliativoTechClass.Core.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,17 +8,14 @@ namespace CrudAvaliativoTechClass.Web.Services
 {
     internal class ClienteService
     {
-        private readonly ClienteRepositorio _clienteRepositorio;
+        private readonly IClienteRepositorio _clienteRepositorio;
 
         
-        public ClienteService(ClienteRepositorio clienteRepositorio)
+        public ClienteService(IClienteRepositorio clienteRepositorio)
         {
             _clienteRepositorio = clienteRepositorio;
         }
 
-        public ClienteService()
-        {
-        }
 
         public void AdicionarCliente(Cliente cliente)
         {

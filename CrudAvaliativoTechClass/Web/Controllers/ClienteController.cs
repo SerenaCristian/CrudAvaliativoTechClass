@@ -1,4 +1,5 @@
-﻿using CrudAvaliativoTechClass.Core.Entidades;
+﻿using CrudAvaliativoTechClass.Core.Contratos;
+using CrudAvaliativoTechClass.Core.Entidades;
 using CrudAvaliativoTechClass.Web.Services;
 using System;
 
@@ -6,12 +7,12 @@ namespace CrudAvaliativoTechClass.Web.Controllers
 {
     internal class ClienteController
     {
-        private readonly ClienteService _clienteService;
+        private readonly IClienteSevice _clienteService;
 
        
-        public ClienteController(ClienteService clienteService)
+        public ClienteController(IClienteService clienteService)
         {
-            _clienteService = clienteService;
+            _clienteService = (IClienteSevice)clienteService;
         }
 
         
