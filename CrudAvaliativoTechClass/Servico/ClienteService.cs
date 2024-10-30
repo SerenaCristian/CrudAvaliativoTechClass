@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace CrudAvaliativoTechClass.Web.Services
 {
-    internal class ClienteService
+    internal class ClienteService: IClienteSevice
     {
         private readonly IClienteRepositorio _clienteRepositorio;
 
