@@ -19,5 +19,11 @@ namespace CrudAvaliativoTechClass.Web.Controllers
             Cliente cliente = new Cliente(nome, nascimento, email, telefone);
             _clienteService.AdicionarCliente(cliente);
         }
+
+        public void AtualizarCliente(string nome, DateTime nascimento, string email, int telefone)
+        {
+            Cliente cliente = new Cliente(nome, nascimento, email, telefone);
+            _clienteService.AtualizarCliente(cliente);
+        }
     }
 }

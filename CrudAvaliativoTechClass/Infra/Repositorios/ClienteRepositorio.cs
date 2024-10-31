@@ -42,7 +42,7 @@ namespace CrudAvaliativoTechClass.Infra.Repositorios
             }
         }
 
-        public void DeleteFisico(Cliente cliente)
+        public void DeleteCliente(Cliente cliente)
         {
             clientes.Remove(cliente);
         }
@@ -50,6 +50,26 @@ namespace CrudAvaliativoTechClass.Infra.Repositorios
         public List<Cliente> GetClientes()
         {
             return clientes;
+        }
+
+        void IClienteRepositorio.AdicionarCliente(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IClienteRepositorio.Atualizar(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IClienteRepositorio.DeleteFisico(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Cliente> IClienteRepositorio.GetClientes()
+        {
+            throw new NotImplementedException();
         }
     }
 }

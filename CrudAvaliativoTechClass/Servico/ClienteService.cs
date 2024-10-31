@@ -79,5 +79,25 @@ namespace CrudAvaliativoTechClass.Web.Services
                    !string.IsNullOrWhiteSpace(cliente.Email) &&
                    cliente.DataNascimento != DateTime.MinValue;
         }
+
+        public void Atualizar(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AtualizarCliente(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteCliente(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetClientes(Cliente cliente)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
