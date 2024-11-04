@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CrudAvaliativoTechClass.Core.Entidades
 {
-    internal  class ClienteBase
+    internal class BaseCamiseta
     {
-        public  int Id { get; set; }
+        public int Id { get; set; }
     }
 }

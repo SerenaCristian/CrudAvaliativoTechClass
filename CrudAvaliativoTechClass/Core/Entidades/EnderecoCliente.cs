@@ -1,6 +1,6 @@
 ﻿namespace CrudAvaliativoTechClass.Core.Entidades
 {
-    internal class EnderecoCliente
+    internal class EnderecoCliente : BaseEnderecoCliente
     {
         public string Endereco { get; set; }
         public int Numero { get; set; }
