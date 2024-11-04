@@ -1,13 +1,13 @@
 ﻿namespace CrudAvaliativoTechClass.Core.Entidades
 {
-    public class Camiseta : BaseCamiseta
+    internal class Camiseta : BaseCamiseta
     {
         public Camiseta(string nome, string tamanho, string cor, double preco)
         {
-            Nome=nome;
-            Tamanho=tamanho;
-            Cor=cor;
-            Preco=preco;
+            Nome = nome;
+            Tamanho = tamanho;
+            Cor = cor;
+            Preco = preco;
         }
 
         public string Nome { get; set; }           

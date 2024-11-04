@@ -1,6 +1,10 @@
-﻿namespace CrudAvaliativoTechClass.Servico
+﻿using CrudAvaliativoTechClass.Core.Contratos;
+using CrudAvaliativoTechClass.Core.Entidades;
+
+namespace CrudAvaliativoTechClass.Servico
 {
-    internal class EnderecoService
+    internal class EnderecoService : IClienteSevice
     {
+
     }
 }
